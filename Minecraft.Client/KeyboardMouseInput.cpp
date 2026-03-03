@@ -36,6 +36,7 @@ void KeyboardMouseInput::Init()
 	m_cursorHiddenForUI = false;
 	m_windowFocused = true;
 	m_hasInput = false;
+	m_kbmActive = true;
 
 	RAWINPUTDEVICE rid;
 	rid.usUsagePage = 0x01; // HID_USAGE_PAGE_GENERIC

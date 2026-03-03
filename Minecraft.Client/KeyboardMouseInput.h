@@ -66,6 +66,9 @@ public:
 
 	bool HasAnyInput() const { return m_hasInput; }
 
+	void SetKBMActive(bool active) { m_kbmActive = active; }
+	bool IsKBMActive() const { return m_kbmActive; }
+
 	float GetMoveX() const;
 	float GetMoveY() const;
 
@@ -107,6 +110,8 @@ private:
 	bool m_windowFocused;
 
 	bool m_hasInput;
+
+	bool m_kbmActive;
 };
 
 extern KeyboardMouseInput g_KBMInput;
